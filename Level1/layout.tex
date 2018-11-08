@@ -1,0 +1,11 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=0pt]{geometry}
+\usepackage[skins,raster]{tcolorbox}
+\pagestyle{empty}
+\begin{document}
+\begin{tcbraster}
+	[raster height=\textheight,raster equal skip=0pt,blank,
+    graphics pages={8,1,4,5,  2,7,6,3}]
+  \tcbincludepdf{obsah.pdf}% <-- The A6 document with 8 pages
+\end{tcbraster}
+\end{document}
